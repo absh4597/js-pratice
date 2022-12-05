@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>function baind</h1>
+    <script>
+        let obj={
+            name:"avi",
+            id:2,
+           
+            fullName:function(){
+                return this.name +"" +this.id;
+
+            }
+        }
+        let member={
+            name:"nitish",
+            id:5,
+        }
+        let fullName=obj.fullName.bind(member);
+        console.log(fullName);
+        document.getElementsByTagName("h1").innerHtml=fullName;
+        </Script>
+</body>
+</html>
